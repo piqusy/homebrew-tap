@@ -6,8 +6,6 @@ class WtLink < Formula
   version "1.0.0"
   license "MIT"
 
-  bottle :unneeded
-
   def install
     bin.install "wt-link"
   end
