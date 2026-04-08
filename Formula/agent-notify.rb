@@ -10,12 +10,12 @@ class AgentNotify < Formula
 
   on_arm do
     url "https://github.com/piqusy/agent-notify/releases/download/v#{version}/agent-notify-darwin-arm64.tar.gz"
-    sha256 "d1e327b616a3ecdad06988652305ef62b9f223c6efe3df9c15892a56f8e20ac5"
+    sha256 "478e60f412f03938853179f79dfb5928ca5b1e71266b3ef96d973042c9a0e261"
   end
 
   on_intel do
     url "https://github.com/piqusy/agent-notify/releases/download/v#{version}/agent-notify-darwin-x64.tar.gz"
-    sha256 "b7db51971ae470485f60ea27b2110f06da0c6ae82278d37344405577ffaf91d7"
+    sha256 "a3f87a821fe18a1eaacc7796ca16d41c0a5f6e47a178edef5b50ff6fe80f29a4"
   end
 
   def install
