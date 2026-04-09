@@ -1,9 +1,9 @@
 class WtLink < Formula
   desc "WordPress worktree provisioner for local development with Laravel Herd"
   homepage "https://github.com/piqusy/wt-link"
-  url "https://github.com/piqusy/wt-link/releases/download/v1.1.0/wt-link"
-  sha256 "6fed024d601988ceea828e002e8278808627ed5c17e6fb1575ef2ceff3924441"
-  version "1.1.0"
+  url "https://github.com/piqusy/wt-link/releases/download/v1.3.0/wt-link"
+  sha256 "e97c17c381cfdd3237ec67d7ec3e7c68ba37d24036467c832fe28ffa68693636"
+  version "1.3.0"
   license "MIT"
 
   def install
