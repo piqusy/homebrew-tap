@@ -5,22 +5,23 @@
 class AgentNotify < Formula
   desc "Desktop notifications for AI agents (Claude Code, OpenCode)"
   homepage "https://github.com/piqusy/agent-notify"
-  version "0.1.14"
+  version "0.1.15"
   license "MIT"
 
   on_arm do
     url "https://github.com/piqusy/agent-notify/releases/download/v#{version}/agent-notify-darwin-arm64.tar.gz"
-    sha256 "80d2efe1b0878ad716527072fd27d1dd24376aebedb5741d38e9858a6d97e2f6"
+    sha256 "1a1ad1000630182864ba026d6eb767b95ec5fdb5ae8c41ee4fd77001f0884a3e"
   end
 
   on_intel do
     url "https://github.com/piqusy/agent-notify/releases/download/v#{version}/agent-notify-darwin-x64.tar.gz"
-    sha256 "7ae7f3f40d0c6d2f8d5abd03e4d91580b6a05836f541002f5e69f0c7b4676bc0"
+    sha256 "1525e01d27da0a65dd2b20119322908883b2a1c304fe85a0785bc483bff08f04"
   end
 
   def install
-    binary = Hardware::CPU.arm? ? "agent-notify-darwin-arm64" : "agent-notify-darwin-x64"
-    bin.install binary => "agent-notify"
+    bundle = Hardware::CPU.arm? ? "agent-notify-darwin-arm64" : "agent-notify-darwin-x64"
+    bin.install "#{bundle}/bin/agent-notify"
+    libexec.install "#{bundle}/opencode-agent-notify"
   end
 
   test do
