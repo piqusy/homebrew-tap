@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# This formula is auto-updated by the release workflow.
-# Do not manually edit the version, arm64_sha256, or x64_sha256 fields.
-class GhProductive < Formula
+# This formula is a versioned release formula.
+# Do not manually edit the version or SHA fields.
+class GhProductiveAT097 < Formula
   desc "Productive TUI client for activity, preview, and task navigation"
   homepage "https://github.com/piqusy/gh-productive"
   version "0.9.7"
