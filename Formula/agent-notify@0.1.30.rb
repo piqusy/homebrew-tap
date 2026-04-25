@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# This formula is auto-updated by the release workflow.
-# Do not manually edit the version, arm64_sha256, or x64_sha256 fields.
-class AgentNotify < Formula
+# This formula is a versioned release formula.
+# Do not manually edit the version or SHA fields.
+class AgentNotifyAT0130 < Formula
   desc "Desktop notifications for AI agents (Claude Code, OpenCode, Pi)"
   homepage "https://github.com/piqusy/agent-notify"
   version "0.1.30"
