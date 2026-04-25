@@ -3,24 +3,24 @@
 # This formula is auto-updated by the release workflow.
 # Do not manually edit the version, arm64_sha256, or x64_sha256 fields.
 class AgentNotify < Formula
-  desc "Desktop notifications for AI agents (Claude Code, OpenCode)"
+  desc "Desktop notifications for AI agents (Claude Code, OpenCode, Pi)"
   homepage "https://github.com/piqusy/agent-notify"
-  version "0.1.29"
+  version "0.1.30"
   license "MIT"
 
   on_arm do
     url "https://github.com/piqusy/agent-notify/releases/download/v#{version}/agent-notify-darwin-arm64.tar.gz"
-    sha256 "9266194fb7466f39a1d7122a5eaab4fd9eb4803150a148d5080a590e668976e7"
+    sha256 "09f44c6b457ade3616393ca75f05fc385a2b6730ccbe77a87cc671f2ab62462d"
   end
 
   on_intel do
     url "https://github.com/piqusy/agent-notify/releases/download/v#{version}/agent-notify-darwin-x64.tar.gz"
-    sha256 "4bd1f876b6db034f183fee56800427ca1e1ef027284a97e55b84d087f45ac2b8"
+    sha256 "bd5bdd43bec5916d0a28fa11dceadd33e26a66532f4c0df13129088d764ec457"
   end
 
   def install
     bin.install "bin/agent-notify"
-    libexec.install "opencode-agent-notify"
+    libexec.install "opencode-agent-notify", "claude-code", "pi-coding-agent"
   end
 
   test do
