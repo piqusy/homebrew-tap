@@ -5,17 +5,17 @@
 class AgentNotify < Formula
   desc "Desktop notifications for AI agents (Claude Code, OpenCode, Pi)"
   homepage "https://github.com/piqusy/agent-notify"
-  version "0.2.18"
+  version "0.2.19"
   license "MIT"
 
   on_arm do
     url "https://github.com/piqusy/agent-notify/releases/download/v#{version}/agent-notify-darwin-arm64.tar.gz"
-    sha256 "6b3ea3b4a660611764c65d4ee886808a15f3ccb427082f625ca97281a8fac9de"
+    sha256 "24650b8a93aace3db05755c85dc8ab761c820f82f18ab1c6a5dd937925b4654f"
   end
 
   on_intel do
     url "https://github.com/piqusy/agent-notify/releases/download/v#{version}/agent-notify-darwin-x64.tar.gz"
-    sha256 "fd50bb02fafb1b3975df88cdecdc695f9dfe5706ac80968a8e9b3cbd67da3965"
+    sha256 "010c3b40d8e9fd59bb2a603729c2de4bb04c6cf2431d5dc8fc3f641eb9d6eec1"
   end
 
   def install
