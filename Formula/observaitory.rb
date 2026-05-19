@@ -5,16 +5,16 @@
 class Observaitory < Formula
   desc "Local-first attention queue for AI agent sessions"
   homepage "https://github.com/piqusy/observaitory"
-  version "0.8.0"
+  version "0.10.1"
 
   on_arm do
     url "https://github.com/piqusy/observaitory/releases/download/v#{version}/observaitory-darwin-arm64.tar.gz"
-    sha256 "e0f84cbbb4480155704f36f6ac1b63fbb50a296f2eb68919c0ccf66ab02880be"
+    sha256 "2e590f17e94bbd810ca8a4a7fb41c2c23e3ef2c3b97b5afd768c2b986bea1cb8"
   end
 
   on_intel do
     url "https://github.com/piqusy/observaitory/releases/download/v#{version}/observaitory-darwin-x64.tar.gz"
-    sha256 "8f3cbf033f9270704bcb5a045bad89b000aa37830ca5d48162c5c63765008f8d"
+    sha256 "edcab6ab9b9c1c6b26fea1fc7d45b97442654cb4e4896796decefb9bb955d1fa"
   end
 
   def install
